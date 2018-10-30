@@ -1,9 +1,3 @@
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Advanced Lane Finding Project**
 
 The goals / steps of this project are the following:
@@ -19,13 +13,41 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/undistort_output.png "Undistorted"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[image1]: ./writeup_images/chessboard_corners.png "Chessboard corners drwan"
+[image2]: ./writeup_images/chessboard_undistorted.png "Chessboard undistorted"
+[image3]: ./writeup_images/test_images_undistorted.png "Test images undistorted"
+[image4]: ./writeup_images/test_images_src_quad.png "Test images source quad drawn"
+[image5]: ./writeup_images/test_images_warped.png "Test images warped"
+[image6]: ./writeup_images/test_images_dst_quad.png "Test images destination quad drawn"
+[image7]: ./writeup_images/test_images_hls_s.png "Test images HLS S-channel threshold"
+[image8]: ./writeup_images/test_images_hls_l.png "Test images HLS L-channel threshold"
+[image9]: ./writeup_images/test_images_cielab_b.png "Test images CIELab b-channel threshold"
+[image10]: ./writeup_images/test_images_sobel_x.png "Test images Sobel absolute x"
+[image11]: ./writeup_images/test_images_sobel_y.png "Test images Sobel absolute y"
+[image12]: ./writeup_images/test_images_sobel_mag.png "Test images Sobel magnitude"
+[image13]: ./writeup_images/test_images_sobel_dir.png "Test images Sobel direction"
+[image14]: ./writeup_images/test_images_combined_color_thresh.png "Test images Combined color thresholds"
+[image15]: ./writeup_images/test_images_combined_sobel_thresh.png "Test images Combined Sobel thresholds"
+[image16]: ./writeup_images/test_images_combined_binary.png "Test images Combined binary"
+[image17]: ./writeup_images/test_images_binary_warped.png "Test images Binary warped"
+[image18]: ./writeup_images/test_images_sliding_windows.png "Test images Sliding windows"
+[image19]: ./writeup_images/test_images_lane_drawn.png "Test images Lane drawn"
+[video1]: ./project_video_output.mp4 "Project video output"
+[video2]: ./challenge_video_output.mp4 "Challenge video output"
+[video3]: ./harder_challenge_video_output.mp4 "Harder challenge video output"
+[video4]: ./private_video_1_output.mp4 "Private video 1 output"
+[video5]: ./private_video_2_output.mp4 "Private video 2 output"
+
+## Running the notebook locally
+
+0. Assumes python and git is already installed
+1. Clone the repository
+2. Create virtual environment inside cloned project, run `virtualenv venv`
+3. Activate virtual environment, on Windows run `venv\Scripts\activate` or on Linux `source venv/bin/activate`
+4. Install packages as listed in requirements, run `pip install -r requirements.txt`
+5. Launch Jupyter notebook, run `jupyter notebook`
+
+---
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
