@@ -38,6 +38,15 @@ The goals / steps of this project are the following:
 [video4]: ./private_video_1_output.mp4 "Private video 1 output"
 [video5]: ./private_video_2_output.mp4 "Private video 2 output"
 
+## Running the notebook locally
+
+0. Assumes python and git are already installed
+1. Clone the repository
+2. Create virtual environment inside cloned project, run `virtualenv venv`
+3. Activate virtual environment, on Windows run `venv\Scripts\activate` or on Linux `source venv/bin/activate`
+4. Install packages as listed in requirements, run `pip install -r requirements.txt`
+5. Launch Jupyter notebook, run `jupyter notebook`
+
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
